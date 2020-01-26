@@ -1,15 +1,14 @@
 <template>
-  <v-app class="app">
-    <!-- <HelloWorld></HelloWorld> -->
-    <router-view/>
-  </v-app>
+  <div class="app">
+    <HelloWorld></HelloWorld>
+    <!-- <router-view></router-view> -->
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'App',
-  data: () => ({
-    //
-  })
+<style lang="scss" scoped>
+.app {
+  backface-visibility: hidden;
+  display: flex;
+  min-height: 100vh;
 }
-</script>
+</style>
